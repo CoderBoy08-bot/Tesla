@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Back to main page</a></li>
+        <li><a href="marathonReg.html">Race Registration</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <main>
+      <h1>Forms demo</h1>
+      <form action="">
+        <div>
+          <label for="username">Enter your username:</label>
+          <input
+            type="text"
+            placeholder="username"
+            name="username"
+            id="username"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="password">Enter your password:</label>
+          <input
+            type="password"
+            placeholder="password"
+            name="password"
+            id="password"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="color">Enter a color:</label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <br />
+        <div>
+          <label for="number">Enter a number:</label>
+          <input
+            type="number"
+            placeholder="Enter a number"
+            name="num"
+            id="number"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="date">Enter a date</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <br />
+        <!--This won't submit the form -->
+        <button type="button">I will not submit</button>
+        <!-- This submits the form -->
+        <button>I will submit</button>
+        <!-- Another way of button -->
+        <input type="submit" value="I will also submit the form" />
+      </form>
+      <hr />
+      <br />
+      <br />
+      <form action="https://www.youtube.com/results" target="_blank">
+        <label for="search"> Youtube search: </label>
+        <input
+          type="text"
+          placeholder="search"
+          name="search_query"
+          id="search"
+        />
+        <button>submit</button>
+      </form>
+      <br />
+      <br />
+      <form action="https://www.udemy.com/courses/search" target="_blank">
+        <label for="udemy_search"> Udemy search: </label>
+        <input type="text" name="q" placeholder="search" id="udemy_search" />
+      </form>
+      <hr />
+      <br /><br />
+      <h2>More inputs</h2>
+      <form action="">
+        <h3>Pets:</h3>
+        <label for="dog">Dog</label>
+        <input type="checkbox" name="dog" id="dog" />
+        <br />
+        <label for="cat">Cat</label>
+        <input type="checkbox" name="cat" id="cat" />
+        <br />
+        <label for="fish">Fish</label>
+        <input type="checkbox" name="fish" id="fish" />
+        <br />
+        <label for="owl">Owl</label>
+        <input type="checkbox" name="owl" id="owl" />
+
+        <h2>Meal Type</h2>
+        <label for="veg">Vegetarian</label>
+        <input type="radio" name="meal" value="veg" id="veg" />
+        <br />
+        <label for="non-veg">Non-Vegetarian</label>
+        <input type="radio" name="meal" value="non-veg" id="non-veg" />
+        <br />
+        <label for="both">Both</label>
+        <input type="radio" name="meal" value="both" id="both" />
+
+        <br />
+        <br />
+        <label for="shirt">Shirt size:</label>
+        <select name="shirt-size" id="shirt">
+          <option value="S">small</option>
+          <option value="M">medium</option>
+          <option value="L">large</option>
+          <option value="XL">extra-large</option>
+        </select>
+        <p>
+          <label for="cheese">Amount of cheese</label>
+          <input
+            type="range"
+            name="amount_of_cheese"
+            id="cheese"
+            min="10"
+            value="50"
+            max="100"
+          />
+        </p>
+        <label for="text">
+          Your stories:
+          <br />
+          <textarea
+            name="story"
+            id="text"
+            cols="40"
+            rows="20"
+            placeholder="write something"
+          ></textarea></label
+        ><br />
+        <button>submit</button>
+      </form>
+      <h2>Form Validations</h2>
+      <form action="">
+        <p>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            minlength="5"
+            maxlength="8"
+            name="password"
+            id="password"
+            required
+          />
+        </p>
+        <button>submit</button>
+      </form>
+    </main>
+  </body>
+</html>
